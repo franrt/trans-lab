@@ -1,0 +1,97 @@
+/* 
+COLORES TRANS-LAB:
+tipografía y dividers: #acacae;
+botones:  #3b4674;
+amarillo: #f6a800;
+gris oscuro: #3e3f41;
+
+font-family: 'Raleway', sans-serif;
+ */
+
+* {
+    background-color: #3e3f41;
+    color: #acacae;
+    margin: 0 auto;
+    padding: 0
+}
+
+#logo {
+    height: 200px;
+    margin-top: 100px;
+}
+
+.title p {
+    color: #f6a800;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+input {
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+
+/* estilos inputs */
+
+
+/* label color */
+
+.input-field label {
+    color: #acacae;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+    color: #ffffff;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
+}
+
+
+/* valid color */
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
+}
+
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #ffffff;
+}
+
+input:not([type]),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default) {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
