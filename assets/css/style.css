@@ -9,10 +9,13 @@ font-family: 'Raleway', sans-serif;
  */
 
 * {
-    background-color: #3e3f41;
-    color: #acacae;
     margin: 0 auto;
     padding: 0
+}
+
+body {
+    background-color: #3e3f41;
+    color: #acacae;
 }
 
 #logo {
@@ -26,58 +29,26 @@ font-family: 'Raleway', sans-serif;
     font-size: 32px;
 }
 
-input {
-    padding: 30px;
+.blanco {
+    height: 200px;
+    width: 80%;
     background-color: #ffffff;
+    padding: 30px;
+}
+
+.btn-ini {
+    margin-top: -50px;
+    width: 100%;
+    background-color: #f6a800;
+    color: #3b4674;
+}
+
+#contrasena {
+    margin-top: -20px;
 }
 
 
 /* estilos inputs */
-
-
-/* label color */
-
-.input-field label {
-    color: #acacae;
-}
-
-
-/* label focus color */
-
-.input-field input[type=text]:focus+label {
-    color: #ffffff;
-}
-
-
-/* label underline focus color */
-
-.input-field input[type=text]:focus {
-    border-bottom: 1px solid #ffffff;
-    box-shadow: 0 1px 0 0 #ffffff;
-}
-
-
-/* valid color */
-
-.input-field input[type=text].valid {
-    border-bottom: 1px solid #ffffff;
-    box-shadow: 0 1px 0 0 #ffffff;
-}
-
-
-/* invalid color */
-
-.input-field input[type=text].invalid {
-    border-bottom: 1px solid #ffffff;
-    box-shadow: 0 1px 0 0 #ffffff;
-}
-
-
-/* icon prefix focus color */
-
-.input-field .prefix.active {
-    color: #ffffff;
-}
 
 input:not([type]),
 input[type=password]:not(.browser-default),
