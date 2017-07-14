@@ -71,7 +71,9 @@ $(document).ready(function() {
             .done(function(response) {
                 console.log("YAY!");
                 console.log(response);
-
+                var saldo = (response.saldoTarjeta);
+                console.log(saldo);
+                $("#muestraSaldo").append(saldo);
             })
             .fail(function() {
                 console.log("error");
@@ -79,18 +81,13 @@ $(document).ready(function() {
             .always(function() {
                 console.log("complete");
             })
-
-        var saldo = this.saldoTarjeta;
-        console.log(saldo);
     }
 
 
 
     $("#saldo").click(function(e) {
         console.log(":)");
-        $("#muestraSaldo").empty();
-        var saldo = this.saldoTarjeta;
-        console.log(saldo);
+        $("#veoSaldo").append(saldo);
         ajaxBip(saldo);
     })
 });

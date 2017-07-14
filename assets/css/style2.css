@@ -26,6 +26,11 @@ footer {
     margin-top: 150px;
 }
 
+.btn:hover,
+.btn-large:hover {
+    background-color: #e69b00;
+}
+
 .btn-opt {
     margin-top: 20px;
     width: 100%;
@@ -76,4 +81,13 @@ footer {
     color: white;
     font-size: 25px;
     line-height: 0;
+}
+
+.veoSaldo {
+    background-color: white;
+    font-size: 20px;
+}
+
+#muestraSaldo {
+    margin: 10px;
 }
