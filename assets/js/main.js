@@ -11,6 +11,7 @@ $(document).ready(function() {
 
     $('#btnValidate').click(function() {
         var sEmail = $('#txtEmail').val();
+
         var pass = $("#validarPass").val();
 
         // Chequear q no haya un input vacío
@@ -37,7 +38,7 @@ $(document).ready(function() {
     }
 
     //funcion para validar solo numeros
-    var nums = (/^[0-9]+$/.test(pass));
+    var nums = (/^[0-9]+$/.test(passW));
     var passW = $("#validarPass").val();
 
     function validarSiNumero(numeros) {
@@ -48,4 +49,48 @@ $(document).ready(function() {
 
     }
 
+    //Local Storage
+
+    // guardar
+    var correoE = $('#txtEmail').val();
+    localStorage.correoE = correoE;
+
+    //mostrar el mail del usuario en el perfil
+
+    $(location).attr("user-mail", "index2.html");
+
+
+
+    //llamando a la api
+    function ajaxBip(saldo) {
+        $.ajax({
+                url: 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=123456',
+                type: 'GET',
+                dataType: 'json',
+            })
+            .done(function(response) {
+                console.log("YAY!");
+                console.log(response);
+
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                console.log("complete");
+            })
+
+        var saldo = this.saldoTarjeta;
+        console.log(saldo);
+    }
+
+
+
+    $("#saldo").click(function(e) {
+        console.log(":)");
+        $("#muestraSaldo").empty();
+        var saldo = this.saldoTarjeta;
+        console.log(saldo);
+        ajaxBip(saldo);
+    })
 });
