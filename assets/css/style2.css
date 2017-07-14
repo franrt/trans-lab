@@ -57,3 +57,23 @@ footer {
 .side-nav li>a>i.material-icons {
     color: #f6a800;
 }
+
+
+/* estilos perfil */
+
+.profile {
+    background-color: #f6a800;
+    height: 200px;
+}
+
+.pug {
+    margin-top: 20px;
+    width: 150px;
+}
+
+.faq p {
+    margin-top: 50px;
+    color: white;
+    font-size: 25px;
+    line-height: 0;
+}

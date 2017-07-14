@@ -5,19 +5,78 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- fontAwesome -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- googlefonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
     <!-- iconos materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style2.css" rel="stylesheet">
 </head>
 
 <body>
 
+    <!--navbar-->
+
+    <nav>
+        <div class="nav-wrapper" id="nav">
+            <a href="#!" class="brand-logo" id="tran-logo">TRANS-LAB</a>
+            <!--boton que se activa en col s-->
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">VER SALDO</a></li>
+                <li><a href="#">CALCULAR TARIFA</a></li>
+                <li><a href="#">PERFIL</a></li>
+                <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#"><i class="material-icons prefix side">attach_money</i>Ver saldo</a></li>
+                <li><a href="#"><i class="material-icons prefix side">apps</i>Calcular tarifa</a></li>
+                <li><a href="#"><i class="material-icons prefix side">person</i>Perfil</a></li>
+                <li><a href="#"><i class="material-icons prefix side">receipt</i>Preguntas frecuentes</a></li>
+                <li><a href="#"><i class="material-icons prefix side">arrow_forward</i>Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--FAQs-->
+    <div class="faqs">
+        <div class="row">
+            <div class="col s12 center-align profile faq">
+                <p>PREGUNTAS</p>
+                <p>FRECUENTES</p>
+            </div>
+        </div>
+    </div>
+
+    <!--collapsible answers-->
+    <div class="container">
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header">¿Qué cuidados requiere la tarjeta para mantenerla en buenas condiciones?</div>
+                <div class="collapsible-body"><span>Los cuidados de tu tarjeta son simples. Sólo debes evitar exponerla al calor, doblarla o quebrarla. Te recomendamos tenerla en un tarjetero plástico para aumentar su vida útil.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">¿Dónde puedo cambiar mi tarjeta bip! portador en caso de falla?</div>
+                <div class="collapsible-body"><span>Si tu tarjeta no funciona y tiene daños no atribuibles al usuario, llévala a una Oficina de Servicio al Cliente donde será cambiada por una nueva, sólo si se comprueba la falla. Si la tarjeta dañada tiene saldo, será traspasado en cinco días hábiles.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Viaje de emergencia:</div>
+                <div class="collapsible-body"><span>Todas las tarjetas bip! tienen disponible un Viaje de Emergencia que te permite realizar un único viaje de manera integrada a cuenta de tu próxima carga, en caso que no tengas saldo suficiente.
+            Al realizar la siguiente carga se te descontarán las cuotas de transporte utilizadas. El Viaje de Emergencia se activa a contar de la segunda carga de la tarjeta y no aplica en Metro.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Lunes a Domingo</div>
+                <div class="collapsible-body"><span>Ahora, el Saldo de Emergencia está disponible las 24 horas del día, de lunes a domingo.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">¿Cómo opera el viaje de emergencia?</div>
+                <div class="collapsible-body"><span>Si tienes saldo insuficiente en tu tarjeta puedes utilizar el Viaje de Emergencia. Con él podrás realizar un único viaje integrado el cual tendrá que ser repuesto en la próxima carga. El horario del viaje de emergencia es:
+            El Saldo de Emergencia está disponible las 24 horas del día, de lunes a domingo.
+            Recuerda que este beneficio se activa a contar de la segunda carga de la tarjeta, en caso de que sea nueva y no aplica en Metro.</span></div>
+            </li>
+        </ul>
+    </div>
 
 
     <!-- jQuery -->
