@@ -1,1 +1,5 @@
-/* Holiii acá va tu código también */
+$(document).ready(function() {
+    //inicialización del navbar
+    $(".button-collapse").sideNav();
+
+});

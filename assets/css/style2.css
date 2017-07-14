@@ -1,0 +1,59 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #dddee0;
+}
+
+header,
+main,
+footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+.botones {
+    margin-top: 150px;
+}
+
+.btn-opt {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #f6a800;
+    color: white;
+    box-shadow: none;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#nav {
+    background-color: #3e3f41;
+}
+
+#tran-logo {
+    font-size: 16px;
+}
+
+
+/* estilos sidenav */
+
+#mobile-demo {
+    padding-top: 30px;
+}
+
+.side-nav li>a>i,
+.side-nav li>a>[class^="mdi-"],
+.side-nav li>a li>a>[class*="mdi-"],
+.side-nav li>a>i.material-icons {
+    color: #f6a800;
+}
